@@ -1,0 +1,8 @@
+.home-page{
+    border: red;
+    border-width: 21px;
+  
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
