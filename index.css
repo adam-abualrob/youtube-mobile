@@ -1,0 +1,19 @@
+.home-page{
+    
+}
+.navbar{
+    width:90%;
+    border: 1px red solid;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.navbar-logo{
+ width: 50px;
+}
+.navbar-search-logo{
+    width: 50px;
+    align-items: flex-end;
+    justify-content:flex-end;
+    
+}
