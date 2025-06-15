@@ -72,3 +72,13 @@
     aspect-ratio: 10/16;
 
 }
+.bottom-nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    justify-content: space-between;
+    
+}
+.nav-icons{
+    width:35px;   
+    
+}
