@@ -111,8 +111,38 @@ body {
     height: 100dvh;
 }
 
-.shorts-text {
+.channel-pic {
+    height:2rem;
+    width:2rem;
+    background-color: #000000;
+}
+
+.short-details {
+    color: red;
     position: absolute;
-    left: 5%;
-    top: 80%;
+    top: 85%;
+    left: 3%;
+}
+
+.channel-name {
+    display: flex;
+    flex-direction: row;
+    height: 1rem;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.subscribe-button {
+    padding: 0.29rem;
+    margin: 0.8rem;
+    font-weight: 600;
+    border: 1px white solid;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+.short-description {
+    font-weight: 600;
 }
