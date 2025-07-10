@@ -112,8 +112,8 @@ body {
 }
 
 .channel-pic {
-    height:2rem;
-    width:2rem;
+    height: 2rem;
+    width: 2rem;
     background-color: #000000;
 }
 
@@ -145,4 +145,24 @@ body {
 
 .short-description {
     font-weight: 600;
+}
+
+.short-icons {
+    width: 3rem;
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: invert();
+}
+
+.short-icon-image {
+    width: 2.5rem;
+}
+
+.short-icon-text {
+    margin-top: 0.15rem;
+    margin-bottom: 1rem;
 }
