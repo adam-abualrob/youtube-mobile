@@ -166,3 +166,8 @@ body {
     margin-top: 0.15rem;
     margin-bottom: 1rem;
 }
+
+.short-icon-image:hover {
+    background-color: rgb(238, 16, 16);
+    width: 3rem;
+}
