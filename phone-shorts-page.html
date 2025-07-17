@@ -10,7 +10,7 @@
 
 <body>
     <div class="shorts-page">
-        <iframe class="shorts-video" src="https://www.youtube.com/embed/xZVQfg4sn9Y?si=QmMVvL4KlrI0LxsW"
+        <iframe id="youtube-player" class="shorts-video" src=""
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -42,6 +42,33 @@
             let newValue = parseInt(document.getElementById("like-count").innerHTML)
             document.getElementById("like-count").innerHTML = newValue + 1
         }
+
+        // Get URL parameters
+        function getUrlParams() {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            return {
+                videoId: urlParams.get('videoId'),
+            };
+        }
+
+        // Load video from URL parameters
+        function loadVideoFromUrl() {
+            const params = getUrlParams();
+            console.log(params)
+
+            if (params.videoId) {
+                // Update the iframe source
+                document.getElementById("youtube-player").src =
+                    `https://www.youtube.com/embed/${params.videoId}`;
+            }
+        }
+
+        // Dynamic video navigation
+        document.addEventListener("DOMContentLoaded", function () {
+            // Load video from URL parameters first
+            loadVideoFromUrl();
+        });
     </script>
 </body>
 
