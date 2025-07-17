@@ -74,7 +74,7 @@ body {
 .short {
     width: 100%;
     aspect-ratio: 10/16;
-
+    pointer-events: none;
 }
 
 .bottom-nav {
