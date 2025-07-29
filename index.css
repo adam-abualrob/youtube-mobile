@@ -6,22 +6,30 @@ body {
     margin: 0px;
 }
 
-.navbar {
-    width: 100%;
-    border: 1px red solid;
+.navbar {   
     display: flex;
+    align-items:center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    background-color: blueviolet;
+    padding: 0.5rem;
+
+}
+.search-bar{
+    border-radius: 2.5rem;
 }
 
 .navbar-logo {
     width: 50px;
+    /* margin-left: 12px;
+    margin-top: 6px;  */
 }
 
 .navbar-search-logo {
     width: 50px;
-    align-items: flex-end;
-    justify-content: flex-end;
+    /* align-items: flex-end;
+    justify-content: flex-end; */
+
 }
 
 .video {
@@ -44,6 +52,7 @@ body {
     display: inline-block;
     display: flex;
     align-items: center;
+  
 }
 
 .video-details {
@@ -63,18 +72,25 @@ body {
 .three-dots {
     height: 30px;
 }
+.orts{
+    padding-left: 10px;
+}
 
 .shorts-details-container {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     display: grid;
     grid-template-columns: auto auto;
     gap: 3px;
+    padding-left:0.2rem;
+    padding-right:0.2rem;
+
 }
 
 .short {
-    width: 100%;
     aspect-ratio: 10/16;
     pointer-events: none;
+    padding-left:0.1rem;
+    padding-right:0.1rem;
 }
 
 .bottom-nav {
@@ -87,15 +103,19 @@ body {
     background-color: aqua;
     position: sticky;
     bottom: 0;
+    
+    padding: 5px;
 }
 
 .nav-icons {
-    width: 50px;
+    width: 35px;
 }
 
 .nav-text {
     text-align: center;
-    width: 50px;
+    width: 35px;
+    margin-top:0.5rem ; 
+    margin-bottom:0.5rem ;
 }
 
 .shorts-page {
@@ -115,6 +135,7 @@ body {
     height: 2rem;
     width: 2rem;
     background-color: #000000;
+    margin-left: 0.9rem;
 }
 
 .short-details {
