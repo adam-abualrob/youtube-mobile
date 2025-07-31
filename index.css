@@ -6,23 +6,37 @@ body {
     margin: 0px;
 }
 
-.navbar {   
+.navbar {
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: blueviolet;
     padding: 0.5rem;
 
 }
-.search-bar{
+
+.search-bar {
     border-radius: 2.5rem;
 }
 
+@keyframes example {
+    from {height: 25px;}
+    to {height:30px;}
+}
+
 .navbar-logo {
-    width: 50px;
+    height:25px;
     /* margin-left: 12px;
     margin-top: 6px;  */
+    /* animation-duration:1s;
+    animation-name: example; */
+}
+
+.navbar-logo:hover{
+    animation-name: example;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
 }
 
 .navbar-search-logo {
@@ -52,7 +66,7 @@ body {
     display: inline-block;
     display: flex;
     align-items: center;
-  
+
 }
 
 .video-details {
@@ -72,7 +86,8 @@ body {
 .three-dots {
     height: 30px;
 }
-.orts{
+
+.orts {
     padding-left: 10px;
 }
 
@@ -81,16 +96,16 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     gap: 3px;
-    padding-left:0.2rem;
-    padding-right:0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
 
 }
 
 .short {
     aspect-ratio: 10/16;
     pointer-events: none;
-    padding-left:0.1rem;
-    padding-right:0.1rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
 }
 
 .bottom-nav {
@@ -103,7 +118,7 @@ body {
     background-color: aqua;
     position: sticky;
     bottom: 0;
-    
+
     padding: 5px;
 }
 
@@ -114,8 +129,8 @@ body {
 .nav-text {
     text-align: center;
     width: 35px;
-    margin-top:0.5rem ; 
-    margin-bottom:0.5rem ;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .shorts-page {
