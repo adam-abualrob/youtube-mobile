@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: blueviolet;
     padding: 0.5rem;
 
@@ -20,27 +20,32 @@ body {
     border-radius: 2.5rem;
 }
 
-@keyframes example {
-    from {height: 25px;}
-    to {height:30px;}
+@keyframes logo-animation {
+    from {height: 25px; width:25px;}
+    to {height:30px; width:30px;}
 }
 
+.navbar-logo-container{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
 .navbar-logo {
-    height:25px;
-    /* margin-left: 12px;
-    margin-top: 6px;  */
-    /* animation-duration:1s;
-    animation-name: example; */
+    height: 25px;
+    width: 25px;
+    
 }
 
 .navbar-logo:hover{
-    animation-name: example;
+    animation-name: logo-animation;
     animation-duration:1s;
     animation-fill-mode:forwards;
 }
 
 .navbar-search-logo {
-    width: 50px;
+    height: 25px;
     /* align-items: flex-end;
     justify-content: flex-end; */
 
